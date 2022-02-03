@@ -103,7 +103,7 @@ class Game {
     //let score = Math.floor(this.frames);
     this.ctx.font = "32px serif";
     this.ctx.fillStyle = "white";
-    this.ctx.fillText(`Score: ${this.frames}`, 100, 30);
+    this.ctx.fillText(`Score: ${Math.floor(this.frames / 10 )}`, 100, 30);
   }
 
   stop() {

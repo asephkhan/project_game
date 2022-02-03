@@ -4,8 +4,10 @@
     
 }
 
-/* .start{
+ #start{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     border:5px solid lightseagreen;
-} */
+    align-items: center;
+} 
