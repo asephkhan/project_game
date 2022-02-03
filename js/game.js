@@ -57,7 +57,7 @@ class Game {
   }
 
   drawBackground() {
-    this.background.src = "../docs/assets/images/background-image.jpg";
+    this.background.src = "./docs/assets/images/background-image.jpg";
     this.ctx.drawImage(
       this.background,
       this.x,
