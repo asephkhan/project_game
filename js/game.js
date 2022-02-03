@@ -1,5 +1,6 @@
 class Game {
   constructor() {
+  /*  this.yellow = #F4B18E; */
     this.canvas = document.getElementById("canvas");
     this.ctx = this.canvas.getContext("2d");
     this.ball = null;
@@ -12,7 +13,7 @@ class Game {
     this.canvasHeight = 600;
     this.intervalId = null;
     this.score = 0;
-    this.color = ["darkred", "DarkKhaki", "SeaGreen", "grey"];
+    this.color = ["#E66E7B", "#A3B371", '#F4B99A', "#6E5681"];
     this.obstaclesY = [0, 150, 300, 450];
     this.isPassing = false;
     this.passedObstacle = false;
@@ -57,7 +58,7 @@ class Game {
   }
 
   drawBackground() {
-    this.background.src = "./docs/assets/images/background-image.jpg";
+    this.background.src = "./docs/assets/images/Asifs-Background.png";
     this.ctx.drawImage(
       this.background,
       this.x,
@@ -101,9 +102,9 @@ class Game {
 
   drawScore() {
     //let score = Math.floor(this.frames);
-    this.ctx.font = "32px serif";
+    this.ctx.font = "32px Montserrat";
     this.ctx.fillStyle = "white";
-    this.ctx.fillText(`Score: ${Math.floor(this.frames / 10 )}`, 100, 30);
+    this.ctx.fillText(`Score: ${Math.floor(this.frames / 30 )}`, 50, 50);
   }
 
   stop() {

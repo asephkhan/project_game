@@ -1,6 +1,7 @@
-#canvas{
+#game-board{
     display: flex;
     justify-content: center;
+    align-items: center;
     
 }
 
@@ -8,6 +9,54 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border:5px solid lightseagreen;
+    
     align-items: center;
-} 
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: #213F59;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+#start-button:hover {
+    
+    background-color:#F4B99A;
+    color: #213F59;
+}
+
+
+
+#start-button{
+    background-color: transparent;
+    border: 2px solid #F4B99A;
+    color: #F4B99A;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    padding: 10px 40px;
+    margin-bottom: 60px;
+    margin-top: 10px;
+
+    
+}
+
+h1{
+font-size: 60px;
+}
+
+h2 {
+margin-bottom: 0;
+margin-top: 0;
+
+}
+
+
+p {
+    margin-top: 5px;
+    text-align: center;
+}
+/* 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */

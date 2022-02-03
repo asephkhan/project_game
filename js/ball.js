@@ -7,7 +7,7 @@ class Ball {
           this.height = height; */
       this.img = new Image();
       this.canvas;
-      this.color = 'grey';
+      this.color = '#6E5681';
     }
     left() {
       return this.x - 30;
