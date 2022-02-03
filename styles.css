@@ -1,4 +1,11 @@
-.start{
-    height: 600px;
-    width: 1200px;
+#canvas{
+    display: flex;
+    justify-content: center;
+    
 }
+
+/* .start{
+    display: flex;
+    justify-content: center;
+    border:5px solid lightseagreen;
+} */

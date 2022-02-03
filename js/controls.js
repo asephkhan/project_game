@@ -9,24 +9,24 @@ class Controls {
       switch (e.code) {
         case "ArrowUp":
           if (this.ball.y - 30 > 0) {
-            this.ball.y -= 10;
+            this.ball.y -= 25;
           }
            break;
         case "ArrowDown":
           if (this.ball.y + 30 < 600) {
-            this.ball.y += 10;
+            this.ball.y += 25;
           }
           break;
-        case "ArrowRight":
+         /* case "ArrowRight":
           if (this.ball.x + 30 < 1200){
-            this.ball.x += 10;
+            this.ball.x += 25;
           }
           break;
         case "ArrowLeft":
           if (this.ball.x - 30 > 0){
-            this.ball.x -= 10;
+            this.ball.x -= 25;
           }
-          break;
+          break ; */
       }
     });
   }

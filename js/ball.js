@@ -7,7 +7,7 @@ class Ball {
           this.height = height; */
       this.img = new Image();
       this.canvas;
-      this.color = 'red';
+      this.color = 'grey';
     }
     left() {
       return this.x - 30;
@@ -34,7 +34,7 @@ class Ball {
   
     passedThrough(obstacle) {
       return (
-        this.left() === obstacle.right() + 3
+        this.left() === obstacle.right() +4
       )
     }
   
