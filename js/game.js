@@ -41,6 +41,7 @@ class Game {
           this.stop();
         } else {
           console.log("right color");
+          this.score++;
           setTimeout(() => {
             this.ball.color = this.color[Math.floor(Math.random() * this.color.length)];
 
@@ -81,7 +82,7 @@ class Game {
       let indexArray = [...this.obstaclesY]
   
       //iterating for the colors/indexes
-      colorsArray.forEach((color) => {
+      this.color.forEach((color) => {
         //Random number for each array
         let colorIndex = Math.floor(Math.random()* colorsArray.length );
         let yIndex = Math.floor(Math.random()* indexArray.length)
