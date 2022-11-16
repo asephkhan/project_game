@@ -1,6 +1,5 @@
 class Game {
   constructor() {
-  /*  this.yellow = #F4B18E; */
     this.canvas = document.getElementById("canvas");
     this.ctx = this.canvas.getContext("2d");
     this.ball = null;
@@ -68,7 +67,7 @@ class Game {
     );
   }
   createObstacles() {
-    if (this.frames % 130 === 0) {
+    if (this.frames % 140 === 0) {
       //copying the arrays to not change the originals
       let colorsArray = [...this.color];
       let indexArray = [...this.obstaclesY];
