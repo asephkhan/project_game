@@ -3,8 +3,6 @@ class Ball {
       this.game = game;
       this.x = x;
       this.y = y;
-      /* this.width = width;
-          this.height = height; */
       this.img = new Image();
       this.canvas;
       this.color = '#6E5681';
